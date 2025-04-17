@@ -1,8 +1,9 @@
 :root {
-    --tcolor: #ff5500;
+    --color0: #c5caa4;
+    --color1: #8c926b;
+    --color2: #4a5138;
+    --color3: #181818;
 }
-
-
 
 body {
     display: flex;
@@ -20,5 +21,35 @@ body {
 
 .cell {
     box-sizing: border-box;
-    border: 1px solid gray;
+    border: 1px dotted var(--color3);
+    background-color: var(--color0);
+}
+
+#reset {
+    margin: 16px;
+}
+
+#palette {
+    display: flex;
+}
+
+.picker {
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    border: 4px solid black;
+    margin: 20px;
+}
+
+#picker0 {
+    background-color: var(--color0);
+}
+#picker1 {
+    background-color: var(--color1);
+}
+#picker2 {
+    background-color: var(--color2);
+}
+#picker3 {
+    background-color: var(--color3);
 }
